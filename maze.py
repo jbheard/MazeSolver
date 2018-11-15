@@ -150,6 +150,6 @@ if __name__ == '__main__':
 	print_maze(maze)
 	write_maze(maze, fname)
 	maze = read_maze(fname)
-	print("Read mazefrom file: ")
+	print("Read maze from file: ")
 	print_maze(maze)
 
