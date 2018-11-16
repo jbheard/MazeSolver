@@ -65,3 +65,18 @@ def DFS(maze, start, goal):
 				maze[x0][y0] = -1 # Show that this node has been expanded
 	return None
 
+
+if __name__ == '__main__':
+	from maze import read_maze
+	
+	fname = input("Enter maze file name: ")
+	
+	try:
+		maze = read_maze(fname)
+		
+		# TODO: GUI
+		
+	except IOError:
+		print("Could not open file")
+		exit(1)
+	
